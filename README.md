@@ -15,6 +15,7 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br />
 Go To [http://localhost:3000/search](http://localhost:3000/search) with your browser to see the Search Page.
 
 
