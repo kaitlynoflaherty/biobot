@@ -26,11 +26,6 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.my-link {
-  color: blue;
-  text-decoration: underline;
-}
-
 center {
   border: 5px solid;
   position: absolute;
