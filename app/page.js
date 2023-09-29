@@ -1,18 +1,15 @@
-//'use client'
-import Link from 'next/link';
+'use client'
+import { useRouter } from 'next/navigation';
+import { useEffect } from 'react';
 
-// Ideally, I would want this to be the search page
-// I was having trouble with this page so I made it the default page
-// Links to search page
+// Automatically reroutes to search page
 const DefaultPage = () => {
-  return (
-    <div style={{ padding: '20px' }}>
-      <h1>Welcome to Biobot Take Home Assessment!</h1>
-      <h3>
-        Please go to <Link href="/search" className='my-link'>this page</Link> to search for kits.
-      </h3>
-    </div>
-  );
+  const { push } = useRouter();
+
+  useEffect(() => {
+     push('/search');
+  }, []);
+  return <p></p>;
 };
 
 export default DefaultPage;
